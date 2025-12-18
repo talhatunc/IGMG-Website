@@ -1,0 +1,73 @@
+@extends('layouts.admin')
+
+@section('title', 'Yeni Haber Ekle')
+
+@section('header')
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6"><h3 class="mb-0">Haber Ekle</h3></div>
+        <div class="col-sm-6">
+            <div class="float-end">
+                <a href="{{ route('admin.news.index') }}" class="btn btn-secondary">
+                    <i class="bi bi-arrow-left"></i> Geri Dön
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
+
+@section('content')
+<div class="card card-success card-outline mb-4">
+    <div class="card-header">
+        <div class="card-title">Yeni Haber Oluştur</div>
+    </div>
+    <form action="{{ route('admin.news.store') }}" method="post" enctype="multipart/form-data" id="createNewsForm">
+        @csrf
+        <div class="card-body">
+            @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+            @endif
+
+            <div class="mb-3">
+                <label for="image" class="form-label">Haber Görseli</label>
+                <input type="file" class="form-control @error('image') is-invalid @enderror" id="image" name="image" accept="image/png, image/jpeg">
+                <div class="form-text">İzin verilen formatlar: JPEG, PNG. ZORUNLU BOYUT: 800x533 px. Maksimum dosya boyutu: 2MB.</div>
+                @error('image')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+            </div>
+            <div class="mb-3">
+                <label for="title" class="form-label">Haber Başlığı</label>
+                <input type="text" class="form-control" id="title" name="title" placeholder="Haber başlığını giriniz" value="{{ old('title') }}" required>
+            </div>
+            <div class="mb-3">
+                <label for="content" class="form-label">İçerik</label>
+                <textarea class="form-control" id="content" name="content" rows="6" placeholder="Haber içeriğini giriniz" required>{{ old('content') }}</textarea>
+            </div>
+            <div class="mb-3">
+                <label for="category" class="form-label">Kategori</label>
+                <select class="form-select" id="category" name="category">
+                    <option value="General" {{ old('category') == 'General' ? 'selected' : '' }}>Genel</option>
+                    <option value="Announcement" {{ old('category') == 'Announcement' ? 'selected' : '' }}>Duyuru</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="tags" class="form-label">Etiketler (Virgül ile ayırın)</label>
+                <input type="text" class="form-control" id="tags" name="tags" placeholder="Gündem, Dünya, Ekonomi..." value="{{ old('tags') }}">
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="float-end">
+                <button type="submit" class="btn btn-success"> Kaydet <i class="bi bi-floppy"></i></button>
+            </div>
+        </div>
+    </form>
+</div>
+@endsection

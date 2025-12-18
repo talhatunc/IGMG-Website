@@ -1,74 +1,59 @@
-# IGMG Türkiye Website
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-This project is the official website for IGMG (Islamische Gemeinschaft Millî Görüş) Türkiye, designed to provide information about the organization's activities, news, and services. It features a responsive design and an admin panel for content management.
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-## 📖 Description
+## About Laravel
 
-The IGMG Türkiye Website serves as a digital hub for the organization, offering:
-- **News & Announcements:** Up-to-date information on events and organizational news.
-- **Organization Structure:** Details about the board, branches, and various departments (Youth, Women, etc.).
-- **Interactive Map:** A visual representation of the organization's reach across Turkey.
-- **Multimedia:** Photo and video galleries.
-- **Contact Information:** Easy ways to get in touch with the organization.
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-## ✨ Features
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-- **Responsive Design:** Built with Bootstrap to ensure compatibility across desktops, tablets, and mobile devices.
-- **Admin Panel:** A secure backend for administrators to manage news, events, and other dynamic content.
-- **Dynamic Content:** News sliders, counters for statistics (Branches, Regions, Countries), and more.
-- **Interactive Elements:** SVG map of Turkey with hover effects for city-specific information.
-- **Modern UI:** Clean and professional interface using modern web design principles.
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## 🛠️ Technologies Used
+## Learning Laravel
 
-- **Frontend:** HTML5, CSS3, JavaScript (jQuery), Bootstrap 4
-- **Backend:** PHP
-- **Database:** MySQL (implied for dynamic content management)
-- **Libraries & Plugins:**
-  - Owl Carousel (Sliders)
-  - Magnific Popup (Lightboxes)
-  - AOS (Animate On Scroll)
-  - Open Iconic & Ionicons (Icons)
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
 
-## 🚀 Installation & Setup
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-To run this project locally on your machine using XAMPP:
+## Laravel Sponsors
 
-1.  **Prerequisites:**
-    - Download and install [XAMPP](https://www.apachefriends.org/index.html) (includes Apache and MySQL).
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-2.  **Clone/Download:**
-    - Clone this repository or download the ZIP file.
-    - Place the project folder into your XAMPP `htdocs` directory (usually `C:\xampp\htdocs\`).
-    - Rename the folder to `IGMG-Website` (or your preferred name).
+### Premium Partners
 
-3.  **Database Setup:**
-    - Start **Apache** and **MySQL** from the XAMPP Control Panel.
-    - Go to `http://localhost/phpmyadmin`.
-    - Create a new database (e.g., `igmg_db`).
-    - Import the SQL file if provided in the project files (check for a `.sql` file in the root or `db` folder). *Note: If no SQL file is present, the dynamic features might need database configuration.*
-    - Update the database connection settings in the project's configuration file (commonly `inc/config.php`, `db.php`, or similar) to match your local database credentials.
+- **[Vehikl](https://vehikl.com)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Redberry](https://redberry.international/laravel-development)**
+- **[Active Logic](https://activelogic.com)**
 
-4.  **Run the Application:**
-    - Open your web browser.
-    - Navigate to `http://localhost/IGMG-Website`.
+## Contributing
 
-## 📂 Project Structure
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-- `admin/`: Contains the admin panel files.
-- `css/`: Stylesheets for the frontend.
-- `fonts/`: Font files and icon sets.
-- `images/`: Image assets.
-- `inc/`: Includes (header, footer, database connection).
-- `js/`: JavaScript files.
-- `scss/`: Sass source files for styling.
-- `*.php`: Main pages of the website (index, about, contact, etc.).
+## Code of Conduct
 
-## 🤝 Credits
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-- Template based on Colorlib (as noted in `readme.txt`).
-- Customized and developed for IGMG Türkiye.
+## Security Vulnerabilities
 
-## 📄 License
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
-This project is proprietary to IGMG Türkiye. Please refer to the `readme.txt` for template-specific licensing information regarding Colorlib.
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
