@@ -28,8 +28,8 @@ Proje **XAMPP / PHP 8.2+** ortamında çalışacak şekilde yapılandırılmış
 
 1. **Repoyu Klonlayın**
    ```bash
-   git clone https://github.com/kullaniciadi/proje.git
-   cd proje
+   git clone https://github.com/talhatunc/IGMG-Website.git
+   cd IGMG-Website
    ```
 
 2. **Bağımlılıkları Yükleyin**
@@ -67,10 +67,3 @@ Proje **XAMPP / PHP 8.2+** ortamında çalışacak şekilde yapılandırılmış
 
 - **E-Posta:** `admin@igmgturkiye.com` (veya veritabanındaki admin kullanıcı)
 - **Şifre:** `password` (Varsayılan Laravel şifresi)
-
-## 📱 İletişim & Destek
-
-Geliştirici ekibi ile iletişime geçmek için proje yöneticisine başvurun.
-
----
-*IGMG Türkiye Bilişim Birimi*
