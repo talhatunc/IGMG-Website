@@ -6,7 +6,7 @@
 @section('content')
 <div class="login-box">
   <div class="login-logo">
-    <a href="{{ url('/') }}"><img src="{{ asset('images/logo.png') }}" id="ftco-logo" width="300px" ></a>
+    <a href="{{ route('home') }}"><img src="{{ asset('images/logo.png') }}" id="ftco-logo" width="300px" ></a>
   </div>
   <!-- /.login-logo -->
   <div class="card">

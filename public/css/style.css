@@ -5,6 +5,7 @@ body {
   line-height: 1.8;
   font-weight: 300;
   color: #555555;
+  overflow-x: hidden;
 }
 
 a {
@@ -3584,5 +3585,52 @@ body {
   /* Fix for scrolled hover state on mobile */
   .ftco-navbar-light.scrolled .navbar-nav .dropdown-menu .dropdown-item:hover {
     color: #008f59;
+  }
+}
+
+.block-31 .owl-nav {
+  bottom: 30px !important;
+  top: auto !important;
+  transform: none !important;
+}
+
+.block-31 .owl-dots {
+  bottom: 25px !important;
+}
+
+@media (max-width: 768px) {
+
+  /* Stats Section Mobile Fit */
+  #section-counter .d-flex {
+    /* Ensure flex container works */
+  }
+
+  #section-counter .block-6 {
+    flex-direction: column;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  #section-counter .block-6 .icon {
+    margin-right: 0;
+    margin-bottom: 5px;
+    justify-content: center;
+  }
+
+  #section-counter .block-6 .icon span {
+    font-size: 30px;
+  }
+
+  #section-counter .block-6 .media-body h1 {
+    font-size: 24px;
+  }
+
+  #section-counter .block-6 .media-body p {
+    font-size: 10px;
+  }
+
+  /* Remove margins between items if needed */
+  #section-counter .mb-1 {
+    margin-bottom: 0 !important;
   }
 }

@@ -33,7 +33,7 @@ $(document).ready(function ($) {
 			margin: 10,
 			nav: true,
 			stagePadding: 5,
-			nav: false,
+			nav: true,
 			navText: ['<span class="ion-md-arrow-back">', '<span class="ion-md-arrow-forward">'],
 			responsive: {
 				0: {
@@ -73,11 +73,10 @@ $(document).ready(function ($) {
 		});
 
 		$('.loop-block-31').owlCarousel({
-			loop: false,
-			mouseDrag: false,
-			touchDrag: false,
+			loop: true,
+			mouseDrag: true,
+			touchDrag: true,
 			margin: 0,
-			nav: true,
 			items: 1,
 			autoplay: true,
 			stagePadding: 0,

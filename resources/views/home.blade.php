@@ -3,16 +3,20 @@
 @section('content')
   <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31 ">
-      <div class="block-30 block-30-sm item" style="background-image: url('{{ asset('images/bg_1.jpg') }}');" data-stellar-background-ratio="0.5">
+      @foreach($sliders as $slider)
+      <div class="block-30 block-30-sm item" style="background-image: url('{{ asset($slider->image_path) }}');" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-7">
-              <h2 class="heading mb-5">IGMG | İslam Toplumu Milli Görüş</h2>
+              @if($slider->title)
+              <h2 class="heading mb-5">{{ $slider->title }}</h2>
+              @endif
               
             </div>
           </div>
         </div>
       </div>
+      @endforeach
       
     </div>
   </div>
@@ -24,43 +28,22 @@
         <div class="col-md-8 block-11">
           <h2 class="display-4 mb-3">Haberler</h2>
           <div class="nonloop-block-11 owl-carousel">
+            @foreach($home_news as $news)
             <div class="card fundraise-item">
-              <a href="#"><img class="card-img-top" src="{{ asset('images/img_1.jpg') }}"></a>
+              <a href="{{ route('news.show', $news) }}">
+                @if($news->image)
+                    <img class="card-img-top" src="{{ asset('storage/' . $news->image) }}" alt="{{ $news->title }}" style="height: 250px; object-fit: cover;">
+                @else
+                    <img class="card-img-top" src="{{ asset('images/img_1.jpg') }}" alt="Default" style="height: 250px; object-fit: cover;">
+                @endif
+              </a>
               <div class="card-body">
-                <h3 class="card-title"><a href="#">2025 Maide-i Kur'an Kayseri</a></h3>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="progress custom-progress-success">
-                  <div class="progress-bar bg-primary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <span class="fund-raised d-block">24 Kasım 2025</span>
+                <h3 class="card-title"><a href="{{ route('news.show', $news) }}">{{ $news->title }}</a></h3>
+                <p class="card-text">{{ Str::limit(strip_tags($news->summary ?? $news->content), 100) }}</p>
+                <span class="fund-raised d-block">{{ \Carbon\Carbon::parse($news->published_at)->translatedFormat('d F Y') }}</span>
               </div>
             </div>
-
-            
-            <div class="card fundraise-item">
-              <a href="#"><img class="card-img-top" src="{{ asset('images/img_7.jpg') }}" alt="Image placeholder"></a>
-              <div class="card-body">
-                <h3 class="card-title"><a href="#">2025 Aile Pikniği</a></h3>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="progress custom-progress-success">
-                  <div class="progress-bar bg-primary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <span class="fund-raised d-block">24 Kasım 2025</span>
-              </div>
-            </div>
-            
-            <div class="card fundraise-item">
-              <a href="#"><img class="card-img-top" src="{{ asset('images/img_3.jpg') }}" alt="Image placeholder"></a>
-              <div class="card-body">
-                <h3 class="card-title"><a href="#">2025 Aile Semineri</a></h3>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="progress custom-progress-success">
-                  <div class="progress-bar bg-primary" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <span class="fund-raised d-block">24 Kasım 2025</span>
-              </div>
-            </div>
-
+            @endforeach
           </div>
         </div>
      </div>
@@ -93,7 +76,7 @@
               üstü bir kuruluş olan IGMG, “İyilik ve takvada yarışın.”, “İnsanların en hayırlısı insanlara faydalı
               olandır.” ve “Kolaylaştırınız, güçleştirmeyiniz.” nebevi düsturlarından hareketle toplumsal ilişkilerde
               ihtilafların değil, ortak yönlerin esas alınmasını temenni eder.</p>
-          <p class="mb-0"><a href="about.php" class="btn btn-primary px-3 py-2">Daha Fazla</a></p>
+          <p class="mb-0"><a href="{{ route('about') }}" class="btn btn-primary px-3 py-2">Daha Fazla</a></p>
           
         </div>
       </div>
@@ -158,7 +141,7 @@
   <div class="site-section" id="section-counter">
     <div class="container">
       <hr/>
-      <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-center">
+      <div class="d-flex flex-row justify-content-between align-items-center text-center">
         
         <!-- Sol - ÜLKE -->
         <div class="mb-1 mb-md-0">

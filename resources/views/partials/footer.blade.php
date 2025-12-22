@@ -3,47 +3,27 @@
       <div class="row mb-5">
         <div class="col-md-6 col-lg-4">
           <h3 class="heading-section">Hakkımızda</h3>
-          <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-          <p class="mb-5">Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-          <p><a href="{{ url('/about') }}" class="link-underline">Daha fazla</a></p>
+          <p class="lead">IGMG, "İslam Toplumu Millî Görüş" teşkilatının kısaltılmış halidir. Teşkilat kapsamlı bir şekilde dini, sosyal ve kültürel hizmetler vermektedir.</p>
+          <p class="mb-5">Böylece İslam'ın öğrenilmesi, öğretilmesi, yaşanması, gelecek nesillere aktarılması ve İslam dininin tanıtılması ile bu dinin mensuplarının kültürel, sosyal ve siyasal haklarını korumayı kendisine gaye edinmiştir.</p>
+          <p><a href="{{ route('about') }}" class="link-underline">Daha fazla</a></p>
         </div>
         <div class="col-md-6 col-lg-4">
           <h3 class="heading-section">Son Haberler</h3>
+          @foreach($recent_news as $news)
           <div class="block-21 d-flex mb-4">
             <figure class="mr-3">
-              <img src="{{ asset('images/img_1.jpg') }}" alt="" class="img-fluid">
+              <a href="{{ route('news.show', $news->slug) }}">
+                <img src="{{ asset('storage/' . $news->image) }}" alt="{{ $news->title }}" class="img-fluid" style="width: 80px; height: 80px; object-fit: cover;">
+              </a>
             </figure>
             <div class="text">
-              <h3 class="heading"><a href="#">Maide-i Kur'an Kayseri 2025</a></h3>
+              <h3 class="heading"><a href="{{ route('news.show', $news->slug) }}">{{ $news->title }}</a></h3>
               <div class="meta">
-                <div><a href="#"><span class="icon-calendar"></span> 24 Kasım 2025</a></div>
+                <div><a href="#"><span class="icon-calendar"></span> {{ \Carbon\Carbon::parse($news->published_at)->translatedFormat('d F Y') }}</a></div>
               </div>
             </div>
           </div>
-
-          <div class="block-21 d-flex mb-4">
-            <figure class="mr-3">
-              <img src="{{ asset('images/img_7.jpg') }}" alt="" class="img-fluid">
-            </figure>
-            <div class="text">
-              <h3 class="heading"><a href="#">Aile Pikniği</a></h3>
-              <div class="meta">
-                <div><a href="#"><span class="icon-calendar"></span> 24 Kasım 2025</a></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="block-21 d-flex mb-4">
-            <figure class="mr-3">
-              <img src="{{ asset('images/img_3.jpg') }}" alt="" class="img-fluid">
-            </figure>
-            <div class="text">
-              <h3 class="heading"><a href="#">Aile Semineri</a></h3>
-              <div class="meta">
-                <div><a href="#"><span class="icon-calendar"></span> 24 Kasım 2025</a></div>
-              </div>
-            </div>
-          </div>
+          @endforeach
         </div>
         <div class="col-md-6 col-lg-4">
           <div class="block-23">

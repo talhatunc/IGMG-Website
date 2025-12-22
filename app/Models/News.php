@@ -20,4 +20,9 @@ class News extends Model
         'is_published',
         'published_at',
     ];
+
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
 }

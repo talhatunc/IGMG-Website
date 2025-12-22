@@ -127,6 +127,12 @@
                   <p>Anasayfa</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="{{ route('admin.sliders.index') }}" class="nav-link {{ request()->routeIs('admin.sliders.*') ? 'active' : '' }}">
+                  <i class="nav-icon bi bi-images"></i>
+                  <p>Slider Yönetimi</p>
+                </a>
+              </li>
               <li class="nav-item {{ request()->routeIs('admin.news.*') ? 'menu-open' : '' }}">
                 <a href="#" class="nav-link {{ request()->routeIs('admin.news.*') ? 'active' : '' }}">
                   <i class="nav-icon bi bi-newspaper"></i>
