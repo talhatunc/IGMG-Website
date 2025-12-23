@@ -33,7 +33,7 @@
                     @endif
                 </div>
                 <div class="content">
-                    {!! nl2br(e($news->content)) !!}
+                    {!! $news->content !!}
                 </div>
                 
                 <div class="mt-5">

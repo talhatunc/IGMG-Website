@@ -77,3 +77,44 @@
     </form>
 </div>
 @endsection
+
+@section('styles')
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+<style>
+    .note-editor .dropdown-toggle::after {
+        all: unset;
+    }
+    .note-editor .note-dropdown-menu {
+        box-sizing: content-box;
+    }
+    .note-editor .note-modal-footer {
+        box-sizing: content-box;
+    }
+</style>
+@endsection
+
+@section('scripts')
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+<script>
+    $('#content').summernote({
+        placeholder: 'Haber içeriğini giriniz...',
+        tabsize: 2,
+        height: 300,
+        toolbar: [
+          ['style', ['style']],
+          ['font', ['bold', 'underline', 'clear']],
+          ['color', ['color']],
+          ['para', ['ul', 'ol', 'paragraph']],
+          ['table', ['table']],
+          ['insert', ['link', 'picture', 'video']],
+          ['view', ['fullscreen', 'codeview', 'help']]
+        ],
+        callbacks: {
+            onImageUpload: function(files) {
+                 // Gerekirse görsel yükleme callback'i
+            }
+        }
+    });
+</script>
+@endsection
