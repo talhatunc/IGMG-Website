@@ -2,13 +2,13 @@
     <div class="container">
       <div class="row mb-5">
         <div class="col-md-6 col-lg-4">
-          <h3 class="heading-section">Hakkımızda</h3>
+          <h3 class="heading-section color-green">Hakkımızda</h3>
           <p class="lead">IGMG, "İslam Toplumu Millî Görüş" teşkilatının kısaltılmış halidir. Teşkilat kapsamlı bir şekilde dini, sosyal ve kültürel hizmetler vermektedir.</p>
           <p class="mb-5">Böylece İslam'ın öğrenilmesi, öğretilmesi, yaşanması, gelecek nesillere aktarılması ve İslam dininin tanıtılması ile bu dinin mensuplarının kültürel, sosyal ve siyasal haklarını korumayı kendisine gaye edinmiştir.</p>
           <p><a href="{{ route('about') }}" class="link-underline">Daha fazla</a></p>
         </div>
         <div class="col-md-6 col-lg-4">
-          <h3 class="heading-section">Son Haberler</h3>
+          <h3 class="heading-section color-green">Son Haberler</h3>
           @foreach($recent_news as $news)
           <div class="block-21 d-flex mb-4">
             <figure class="mr-3">
@@ -27,7 +27,7 @@
         </div>
         <div class="col-md-6 col-lg-4">
           <div class="block-23">
-            <h3 class="heading-section">İletişim</h3>
+            <h3 class="heading-section color-green">İletişim</h3>
               <ul>
                 <li><span class="icon icon-map-marker"></span><span class="text"> İskenderpaşa, Feyzullah Efendi Sk.<br/> Fatih/İstanbul</span></li>
                 <li><a href="#"><span class="icon icon-phone"></span><span class="text">+90 (555) 555 55 55</span></a></li>
