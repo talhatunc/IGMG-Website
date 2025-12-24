@@ -25,8 +25,9 @@
           <h2 class="brother color-green">EĞİTİM BAŞKANLIĞI</h2>
           <p class="mb-4">IGMG, bütün yaş grupları için bilinçli eğitimin, İslami kimliğin oluşturulmasında ve başarılı bir toplumsal katılımda önemli rol oynadığına inanır. Bu anlamda “Hayat boyu öğrenme ve öğretme” ilkesinden hareketle, uzman kadrolar eşliğinde hazırlanan “Eğitim Müfredatı” çerçevesinde eğitim hizmetleri sunulurken, IGMG birimleri hedef kitlelerine uygun şekilde farklı farklı eğitim çalışmaları gerçekleştirir. </p>
         </div>
+      </div>
 
-        <div class="row mb-5 mt-5">
+      <div class="row mb-5 mt-5">
           <div class="col-md-12"><h4 class="brother color-green">Eğitim Alanları</h4></div>
           <div class="col-md-3 service-col">
                 <div class="service-number">01</div>
@@ -132,7 +133,6 @@
                 </ul>
             </div>
         </div>
-    </div>
     </div>
   </div>
 @endsection
