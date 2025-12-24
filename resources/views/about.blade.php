@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title', 'Hakkımızda | IGMG Türkiye')
+@section('meta_description', 'IGMG Türkiye hakkında bilgi edinin. Misyonumuz, vizyonumuz ve tarihçemiz.')
+@section('meta_keywords', 'IGMG, hakkımızda, misyon, vizyon, tarihçe')
+
 @section('content')
 <div class="block-31" style="position: relative;">
     <div class="block-30 block-30-sm item" style="background-image: url('{{ asset('images/bg_2.jpg') }}');" data-stellar-background-ratio="0.5">

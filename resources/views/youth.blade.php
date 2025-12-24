@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title', 'Gençlik Teşkilatı | IGMG Türkiye')
+@section('meta_description', 'IGMG Gençlik Teşkilatı. Gençlere yönelik eğitim, sosyal ve kültürel faaliyetler.')
+@section('meta_keywords', 'IGMG gençlik, gençlik kolları, üniversite, eğitim kampları')
+
 @section('content')
 
   <div class="block-31" style="position: relative;">

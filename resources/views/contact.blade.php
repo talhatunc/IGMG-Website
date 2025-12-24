@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title', 'İletişim | IGMG Türkiye')
+@section('meta_description', 'IGMG Türkiye iletişim bilgileri. Adres, telefon ve iletişim formu.')
+@section('meta_keywords', 'IGMG iletişim, adres, telefon, ulaşım')
+
 @section('content')
 <div class="block-31" style="position: relative;">
     <div class="block-30 block-30-sm item" style="background-image: url('{{ asset('images/bg_2.jpg') }}');"

@@ -1,5 +1,9 @@
 @extends('layouts.app', ['site' => 'anasayfa'])
 
+@section('title', 'Anasayfa | IGMG Türkiye')
+@section('meta_description', 'IGMG Türkiye resmi web sitesi. İslami hizmetler, eğitim, hac ve umre, insani yardım ve daha fazlası.')
+@section('meta_keywords', 'IGMG, Milli Görüş, İslami hizmetler, eğitim, yardım')
+
 @section('content')
   <div class="block-31" style="position: relative;">
     <div class="owl-carousel loop-block-31 ">
@@ -20,7 +24,7 @@
 
     </div>
   </div>
-
+ <div class="site-section section-counter">
   <div class="container-fluid">
 
     <div class="row justify-content-center">

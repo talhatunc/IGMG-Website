@@ -289,6 +289,16 @@ h5,
   color: #000;
 }
 
+#ftco-logo {
+  width: 300px;
+}
+
+@media (max-width: 991.98px) {
+  #ftco-logo {
+    width: 200px;
+  }
+}
+
 .navbar-brand {
   text-transform: uppercase;
   letter-spacing: .1em;
@@ -1058,10 +1068,7 @@ textarea.form-control {
   }
 }
 
-.container-fluid {
-  padding-left: 0;
-  padding-right: 0;
-}
+.container-fluid {}
 
 .ftco-section-2 .section-2-blocks-wrapper .button {
   display: block;

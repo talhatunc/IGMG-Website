@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title', 'Kurumsal İletişim | IGMG Türkiye')
+@section('meta_description', 'IGMG Kurumsal İletişim Başkanlığı. Basın açıklamaları, medya ilişkileri ve kurumsal kimlik.')
+@section('meta_keywords', 'IGMG kurumsal, basın, medya, iletişim başkanlığı')
+
 @section('content')
 
   <div class="block-31" style="position: relative;">

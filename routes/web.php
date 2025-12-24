@@ -33,7 +33,7 @@ Route::get('/hac', function () {
     return view('hac');
 })->name('hac');
 
-Route::get('/kurumsal', function () {
+Route::get('/kurumsal-iletisim', function () {
     return view('kib');
 })->name('kib');
 
@@ -48,6 +48,8 @@ Route::get('/kadinlar', function () {
 Route::get('/test', function () {
     return 'OK';
 });
+
+Route::get('/sitemap.xml', [App\Http\Controllers\SitemapController::class, 'index'])->name('sitemap');
 
 // Admin Routes
 Route::prefix('admin')->name('admin.')->group(function () {

@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title', 'Hac ve Umre | IGMG Türkiye')
+@section('meta_description', 'IGMG Hac ve Umre organizasyonları, turlar ve rehberlik hizmetleri.')
+@section('meta_keywords', 'IGMG hac, umre, hac organizasyonu, kutsal topraklar')
+
 @section('content')
 
   <div class="block-31" style="position: relative;">

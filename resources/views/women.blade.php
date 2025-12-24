@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title', 'Kadınlar Teşkilatı | IGMG Türkiye')
+@section('meta_description', 'IGMG Kadınlar Teşkilatı. Kadınlara yönelik irşad, eğitim ve sosyal projeler.')
+@section('meta_keywords', 'IGMG kadınlar, kadın kolları, aile, eğitim')
+
 @section('content')
 
   <div class="block-31" style="position: relative;">

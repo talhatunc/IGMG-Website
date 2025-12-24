@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title', 'İnsani Yardım | IGMG Türkiye')
+@section('meta_description', 'Hasene İnsani Yardım Derneği ile mazlumlara el uzatın. Bağış ve yardım projeleri.')
+@section('meta_keywords', 'Hasene, insani yardım, bağış, zekat, fitre')
+
 @section('content')
 
   <div class="block-31" style="position: relative;">

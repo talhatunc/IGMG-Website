@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title', $news->title . ' | IGMG Türkiye')
+@section('meta_description', Str::limit(strip_tags($news->summary ?? $news->content), 155))
+@section('meta_keywords', $news->tags ?? 'IGMG, haber, ' . $news->category)
+
 @section('content')
 <div class="block-31" style="position: relative;">
     <div class="block-30 block-30-sm item" style="background-image: url('{{ asset('images/bg_1.jpg') }}');" data-stellar-background-ratio="0.5">

@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
+@section('title', 'Eğitim Başkanlığı | IGMG Türkiye')
+@section('meta_description', 'IGMG Eğitim Başkanlığı çalışmaları, müfredat ve eğitim faaliyetleri.')
+@section('meta_keywords', 'IGMG eğitim, eğitim başkanlığı, müfredat, dersler')
+
 @section('content')
 <div class="block-31" style="position: relative;">
     <div class="block-30 block-30-sm item" style="background-image: url('{{ asset('images/bg_2.jpg') }}');" data-stellar-background-ratio="0.5">

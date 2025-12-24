@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html lang="tr">
   <head>
-    <title>IGMG Türkiye | İslam Toplumu Milli Görüş</title>
+    <title>@yield('title', 'IGMG Türkiye | İslam Toplumu Milli Görüş')</title>
     <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="@yield('meta_description', 'İslam Toplumu Milli Görüş (IGMG) Türkiye resmi web sitesi.')">
+    <meta name="keywords" content="@yield('meta_keywords', 'IGMG, İslam Toplumu Milli Görüş, Milli Görüş, İslam, Türkiye')">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:title" content="@yield('title', 'IGMG Türkiye | İslam Toplumu Milli Görüş')">
+    <meta property="og:description" content="@yield('meta_description', 'İslam Toplumu Milli Görüş (IGMG) Türkiye resmi web sitesi.')">
+    <meta property="og:image" content="{{ asset('images/logo.png') }}">
     
     <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,500|Dosis:400,700" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/open-iconic-bootstrap.min.css') }}">
