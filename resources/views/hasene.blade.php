@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-  
+
   <div class="block-31" style="position: relative;">
     <div class="block-30 block-30-sm item" style="background-image: url('{{ asset('images/bg_2.jpg') }}');" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center">
-              <h2 class="heading">İnsani Yardım Çalışmaları Başkanlığı</h2>
+              <h2 class="heading brother">İnsani Yardım Çalışmaları Başkanlığı</h2>
             </div>
           </div>
         </div>
@@ -202,13 +202,13 @@
           <h5 class="brother color-hasene">Konteyner kentler:</h5>
               <p>
                 Deprem döneminde Hasene Vakfı, öncelikle çadırların dağıtımı ile acil desteklere başlamıştır. Ancak çadırların sürdürülebilir bir çözüm oluşturmaması nedeniyle hızla Maraş ve Adıyaman’da konteyner kentlerin kurulumuna başlanmıştır. Bu kapsamda toplamda 420 konteynerden oluşan konteyner kentler kurulmuştur. Konteyner kentler içerisinde her türlü hizmetin bulunduğu ve evlerin içerisinde de A’dan Z’ye her türlü ihtiyacın yer aldığı şekilde tasarlanmıştır.
-              </p>      
+              </p>
             </div>
       </div>
     </div>
   </div>
 
-  
+
 
 
 

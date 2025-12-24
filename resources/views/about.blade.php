@@ -6,14 +6,14 @@
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center">
-              <h2 class="heading">Hakkımızda</h2>
+              <h2 class="heading brother">Hakkımızda</h2>
             </div>
           </div>
         </div>
       </div>
 
   </div>
-  
+
   <div class="site-section mb-3">
     <div class="container">
       <div class="row">
@@ -163,7 +163,7 @@
           <h5>Osman Tüten</h5>
           <small>Mali İşler Başkanı</small>
         </div>
-        
+
         <div class="board-member">
           <div class="member-img-wrapper">
             <img src="{{ asset('images/person_1.jpg') }}" alt="Cengiz Dağdeviren">
@@ -244,7 +244,7 @@
     </div>
   </div>
 
-  
+
   <div class="site-section section-counter">
     <div class="container">
       <div class="row">

@@ -9,22 +9,22 @@
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-7">
               @if($slider->title)
-              <h2 class="heading mb-5">{{ $slider->title }}</h2>
+              <h2 class="brother heading mb-5">{{ $slider->title }}</h2>
               @endif
-              
+
             </div>
           </div>
         </div>
       </div>
       @endforeach
-      
+
     </div>
   </div>
-  
+
   <div class="container-fluid">
 
     <div class="row justify-content-center">
-        
+
         <div class="col-md-8 block-11">
           <h2 class="display-4 mb-3">Haberler</h2>
           <div class="nonloop-block-11 owl-carousel">
@@ -77,7 +77,7 @@
               olandır.” ve “Kolaylaştırınız, güçleştirmeyiniz.” nebevi düsturlarından hareketle toplumsal ilişkilerde
               ihtilafların değil, ortak yönlerin esas alınmasını temenni eder.</p>
           <p class="mb-0"><a href="{{ route('about') }}" class="btn btn-primary px-3 py-2">Daha Fazla</a></p>
-          
+
         </div>
       </div>
     </div>
@@ -142,7 +142,7 @@
     <div class="container">
       <hr/>
       <div class="d-flex flex-row justify-content-between align-items-center text-center">
-        
+
         <!-- Sol - ÜLKE -->
         <div class="mb-1 mb-md-0">
           <div class="media block-6 justify-content-start">
@@ -151,7 +151,7 @@
               <h1 class="color-green-2 helvetica bold counter" data-number="24">0</h1>
               <p class="color-green-2 helvetica">ÜLKE</p>
             </div>
-          </div>     
+          </div>
         </div>
 
         <!-- Orta - BÖLGE -->
@@ -162,7 +162,7 @@
               <h1 class="color-green-2 helvetica bold counter" data-number="44">0</h1>
               <p class="color-green-2 helvetica">BÖLGE</p>
             </div>
-          </div>  
+          </div>
         </div>
 
         <!-- Sağ - ŞUBE -->
@@ -173,7 +173,7 @@
               <h1 class="color-green-2 helvetica bold counter" data-number="2500">0</h1>
               <p class="color-green-2 helvetica">ŞUBE</p>
             </div>
-          </div>  
+          </div>
         </div>
       </div>
     </div>
@@ -193,11 +193,11 @@
             </div>
           </div>
         </div>
-        
+
         <div class="col-md-12 welcome-text">
-          <p class="lead color-green">IGMG Türkiye şube şehirleri ve temsilcilikleri ile irtibatı sürdürebilmek, 
-            koordinasyonu sağlayabilmek adına Teşkilatlanma Başkanlığı görev 
-            yapar. Teşkilatlanmadaki sürdürülebilirliğin sağlanabilmesi adına Teşkilat 
+          <p class="lead color-green">IGMG Türkiye şube şehirleri ve temsilcilikleri ile irtibatı sürdürebilmek,
+            koordinasyonu sağlayabilmek adına Teşkilatlanma Başkanlığı görev
+            yapar. Teşkilatlanmadaki sürdürülebilirliğin sağlanabilmesi adına Teşkilat
             İçi Eğitim (TİES) programları organize edilir.</p>
           <p class="mb-1">Teşkilatlanma Başkanlığı, teşkilat içi koordinasyonun sağlanabilmesi için haftalık toplantılar organize eder, değerlendirme toplantıları yapar, şubeler arası görevlendirmeleri sağlar. Ayrıca herkesin bir araya gelebileceği, iletişimi güçlendiren faaliyetleri tasarlar. Yöneticilerle yapılan kamplar, şube ziyaretleri, istişare toplantıları, temel esas dersleri iletişim ve koordinasyonda güçlenmeyi sağlar.</p>
           <p class="mb-4"><b>Teşkilat İçi Eğitim (TİES):</b> Teşkilat içerisindeki eğitimciler ve başkanlara yönelik olan bu eğitim programı, teşkilat yapısını anlayabilmek ve sürdürülebilir kılabilmek adına önem taşır. IGMG Türkiye kurulduğundan beri yüzlerce kişi Teşkilat İçi Eğitim almıştır. Bunlardan bazıları çevrim içi bazıları fiziksel olarak planlanmış, farklı konularda dersler formatında işlenmiştir.</p>
@@ -208,7 +208,7 @@
 
 
   <div class="featured-section overlay-color-2" style="background-image: url('{{ asset('images/bg_2.jpg') }}');">
-    
+
     <div class="container">
       <div class="row">
 
@@ -219,7 +219,7 @@
         <div class="col-md-6 pl-md-5">
 
           <div class="form-volunteer">
-            
+
             <h2>Üye Ol</h2>
             <form action="{{ route('members.store') }}" method="post" id="memberForm">
               @csrf
@@ -241,7 +241,7 @@
             </form>
           </div>
         </div>
-        
+
       </div>
     </div>
 

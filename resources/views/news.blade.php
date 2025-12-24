@@ -7,7 +7,7 @@
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-7">
-              <h2 class="heading mb-5">Haberler</h2>
+              <h2 class="heading mb-5 brother">Haberler</h2>
             </div>
           </div>
         </div>
@@ -51,5 +51,5 @@
         </div>
       </div>
     </div>
-  </div> 
+  </div>
 @endsection

@@ -6,7 +6,7 @@
         <div class="container">
           <div class="row align-items-center justify-content-center text-center">
             <div class="col-md-7">
-              <h2 class="heading mb-5">Haber Detayı</h2>
+              <h2 class="heading mb-5 brother">Haber Detayı</h2>
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@
                 <div class="content">
                     {!! $news->content !!}
                 </div>
-                
+
                 <div class="mt-5">
                     <a href="{{ route('news') }}" class="btn btn-primary">Haberlere Dön</a>
                 </div>

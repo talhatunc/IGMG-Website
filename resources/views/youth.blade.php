@@ -1,13 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-  
+
   <div class="block-31" style="position: relative;">
     <div class="block-30 block-30-sm item" style="background-image: url('{{ asset('images/bg_2.jpg') }}');" data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center">
-              <h2 class="heading">Gençlik Teşkilatı</h2>
+              <h2 class="heading brother">Gençlik Teşkilatı</h2>
             </div>
           </div>
         </div>
@@ -63,5 +63,5 @@
     </div>
   </div>
 
-  
+
 @endsection

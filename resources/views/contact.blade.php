@@ -7,7 +7,7 @@
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-7 text-center">
-              <h2 class="heading">İletişime Geç</h2>
+              <h2 class="heading brother">İletişime Geç</h2>
             </div>
           </div>
         </div>
